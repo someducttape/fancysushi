@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FancySushi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Syne+Tactile&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script src="scripts/anime.min.js"></script> <!-- henter anime.js -->
+<script src="https://kit.fontawesome.com/756ea4b8ac.js"></script> <!-- henter fontawesome -->
+
+<script src="scripts/universellutforming.js">
+    
+</script>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header-box">
+            <!-- top header -->
+            <header>
+                <h1>Fancy<br>Sushi</h1>
+            </header>
+        </div>
+
+
+        <div class="navbar-box">
+            <!-- navbar -->
+            <nav>
+                <ul>
+                    <li><a href="forside.html">Hjem <i class="fas fa-home"></i></a></li>
+                    <li><a href="kundeanmeldelser.html">Anmeldelser</a></li>
+                    <li class="active"><a href="universellutforming.html">Om UU</a></li>
+                    <li><a href="egendefinert.html">Egendefinert</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-body">
+            <section>
+                <h2>Tilfeldige fakta om Universal Utforming!</h2>
+                <p id="UU-fakta-output">Trykk knappen for en kul fakta om Unversal Utforming.</p>
+                <button onclick="UUfacts()">Ny fakta!</button>
+                <button onclick="allFacts()">Vis ALLE fakta!</button>
+
+                <p id="p-output"></p>
+
+            </section>
+        </div>
+
+        <div class="footer-box">
+            <footer>
+                <p>Ring oss! +47 8839 483</p>
+            </footer>
+        </div>
+    </div>
+
+</body></html>

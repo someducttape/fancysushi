@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FancySushi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Syne+Tactile&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script src="scripts/anime.min.js"></script> <!-- henter anime.js -->
+<script src="https://kit.fontawesome.com/756ea4b8ac.js"></script> <!-- henter fontawesome -->
+<script src="scripts/banner.js"></script>
+
+<script>
+    
+    anime({
+    targets: '.banner-img1',
+    translateX: 100,
+    duration: 1000,
+    direction: 'alternate'
+});
+    
+</script>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header-box"> <!-- top header -->
+            <header>
+                <h1>Fancy<br>Sushi</h1>
+            </header>
+        </div>
+        
+        
+        <div class="navbar-box"> <!-- navbar -->
+           <nav>
+                <ul>
+                    <li class="active"><a href="forside.html">Hjem <i class="fas fa-home"></i></a></li>
+                    <li><a href="kundeanmeldelser.html">Anmeldelser</a></li>
+                    <li><a href="universellutforming.html">Om UU</a></li>
+                    <li><a href="egendefinert.html">Egendefinert</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="main-body">
+            <main>
+               <div class="banner-div"><!-- animert banner -->
+                   <img class="banner-img1" src="images/banner/chef1.png" alt="">
+                   <img class="banner-img2" src="images/banner/chef2.png" alt="">
+               </div>
+                
+                <p>Se produktene våre her</p>
+                
+                <div class="products-div">
+                   <section>
+                       <h2>Fancy Fisk™</h2>
+                        <img src="images/food/dry-fish.jpg" alt="Diverse tørr fisk med drikke">
+                        <p>Velg mellom diverse  tørrfisk og få med valgfri drikke på kjøpet!</p>
+                        <p>259,-</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Nigiri</h2>
+                        <img src="images/food/flyfish-sushi.jpg" alt="To biter nigiri">
+                        <p>For en klassisk sushi opplevelse.</p>
+                        <p>149,-</p>
+                    </section>
+                       
+                       
+                    <section>
+                        <h2>Maki</h2>
+                        <img src="images/food/salmon-maki.jpg" alt="Tre biter lakse maki">
+                        <p>Sylindere med ris, fisk og grønnsaker.</p>
+                        <p>149,-</p>
+                    </section>
+                       
+                    <section>
+                        <h2>Fancy rogn</h2>
+                        <img src="images/food/sushi-plate-big.JPG" alt="Mange sushi biter">
+                        <p>Laks servert med agurk og rogn.</p>
+                        <p>179,-</p>
+                    </section>
+                                        
+                    <section>
+                        <h2>Sashimi</h2>
+                        <img src="images/food/sushi-plate-small.jpg" alt="To sushi biter">
+                        <p>Tynne skiver fisk.</p>
+                        <p>129,-</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Tempura m/ reker</h2>
+                        <img src="images/food/tempura-prawn.jpg" alt="Tempura på et fat">
+                        <p>Friterte reker.</p>
+                        <p>169,-</p>
+                    </section>
+                    
+                    <section>
+                        <h2>Vegansk tempura</h2>
+                        <img src="images/food/tempura-plate.jpg" alt="Vegansk tempura på et fat">
+                        <p>Vårt veganske alternativ til tempura!</p>
+                        <p>150,-</p>
+                    </section>
+                       
+                    <section>
+                        <h2>Temaki</h2>
+                        <img src="images/food/wrap.jpg" alt="Sushi wrap">
+                        <p>Sushi i wrap.</p>
+                        <p>149,-</p>
+                    </section>
+                </div>
+            </main>
+        </div>
+        
+        <div class="footer-box">
+            <footer>
+                <p>Ring oss! +47 8839 483</p>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+</html>

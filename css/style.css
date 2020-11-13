@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-wrapper {
+    display: grid;
+    grid-template-rows: auto auto 75vh 5.75vh;
+}
+
+
+/* header */
+header {
+    background: url("../images/banner/banner-bg.jpg");
+    background-size: 100% 180%;
+    background-position: 100% 20%;
+    height: 15vh;
+    grid-area: header;
+}
+
+h1 {
+    font-family: 'Syne Tactile', cursive;
+    color: white;
+    font-size: 4em;
+    padding-left: 1vw;
+}
+
+
+/* navbar */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #ce1369;
+}
+
+nav li,
+nav li a {
+    padding: 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    grid-area: nav;
+}
+
+li.active {
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(219, 195, 195, 0.44);
+}
+
+/* main */
+.main-body {
+    padding: 5px;
+}
+
+/* kun på hjemmesiden */
+
+/* animert banner */
+.banner-div{
+    width: 450px;
+    height: 70px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.banner-div img{
+    width: 50px;
+}
+
+.products-div {
+    height: 71vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-y: scroll;
+}
+
+.products-div section {
+    padding: 10px 0px;
+}
+
+.products-div img {
+    width: 100%;
+}
+
+/* footer */
+.footer-box {
+    background-color: #650e36;
+    color: #f3dff4;
+    text-align: center;
+    overflow: hidden;
+}
+
+footer p {
+    margin: 1.5vh;
+}
+
+@media only screen and (min-width: 641px) {
+    /* tablet */
+
+    /* tablet produkt grid */
+    .products-div {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    /* desktop */
+
+    header {
+        background-size: 100% 200%;
+        background-position: 100% 20%;
+        height: 30vh;
+    }
+
+
+    /* desktop produkt grid */
+    .products-div {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        overflow: visible;
+    }
+
+    
+    .products-div section img{
+        width: 20vw;
+        max-width: 20em;
+    }
+
+    h1{
+        font-size: 6em;
+    }
+
+}
