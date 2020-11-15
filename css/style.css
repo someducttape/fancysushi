@@ -136,3 +136,16 @@ footer p {
     }
 
 }
+
+/* EGENDEFINERT - rpg */
+.rpg-fighter{
+    float: left;
+}
+
+.rpg-enemy{
+    float: right;
+}
+
+#rpg-chef{
+    width: 150px;
+}

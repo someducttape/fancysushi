@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FancySushi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Syne+Tactile&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script src="scripts/anime.min.js"></script> <!-- henter anime.js -->
+<script src="https://kit.fontawesome.com/756ea4b8ac.js"></script> <!-- henter fontawesome -->
+
+<script>
+    
+    let health = 100;
+    let mana = 50;
+    
+    let enemyHealth = 80;
+    
+    function basicAttack(){
+        enemyHealth = enemyHealth - 5;
+        document.getElementById("enemy-health-p").innerHTML = enemyHealth + "/80 HP";
+    }
+    
+    
+</script>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header-box"> <!-- top header -->
+            <header>
+                <h1>Fancy<br>Sushi</h1>
+            </header>
+        </div>
+        
+        
+        <div class="navbar-box"> <!-- navbar -->
+           <nav>
+                <ul>
+                    <li><a href="forside.html">Hjem <i class="fas fa-home"></i></a></li>
+                    <li><a href="kundeanmeldelser.html">Anmeldelser</a></li>
+                    <li><a href="universellutforming.html">Om UU</a></li>
+                    <li class="active"><a href="egendefinert.html">Egendefinert</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="main-body">
+            <section>
+                <h2>Sushi RPG</h2>
+                <p>Du må sloss mot fisk for å kunne lage mer sushi!</p>
+                <br>
+    
+                <button onclick="basicAttack()">Basic attack</button>
+                <button>Special attack (5 mana)</button>
+                <button>Heal (5 mana)</button>
+                <br>
+                <div class="rpg-fighter">
+                    <p id="rpg-hp">100/100 HP</p>
+                    <p id="rpg-mana">50/50 mana</p>
+                    <img id="rpg-chef" src="images/banner/chef2.png">
+                </div>
+                
+                <div class="rpg-enemy">
+                    <p id="enemy-health-p">80/80 HP</p>
+                    <p>Fish monster!</p>
+                    <div style="width: 140px; height: 300px; background-color: red; "></div>
+                </div>
+                
+                
+                
+            </section>
+        </div>
+        
+        <div class="footer-box">
+            <footer>
+                <p>Ring oss! +47 8839 483</p>
+            </footer>
+        </div>
+    </div>
+    
+</body>
+</html>
