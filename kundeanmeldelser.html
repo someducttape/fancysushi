@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Syne+Tactile&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/405a8fde61.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src=""></script>
 </head>
 
 <script src="scripts/anime.min.js"></script> <!-- henter anime.js -->
@@ -44,11 +45,16 @@
                 
                 <h2>Skriv anmeldelse</h2>
                 <form>
+                       <button class="navbutton" onClick="clearComment()">Clear Comment</button>
+<button class="navbutton" onClick="saveComment()">Save Comment </button>
+
                     <input name="form-title" id="review-title" type="text" placeholder="Overskrift"><br>
-                    <textarea name="form-text" id="review-text" cols="30" rows="10" placeholder="Skriv her!"></textarea>
-                    <button type="submit">Send</button>
-                    <button class="navbutton" onClick="clearComment()">Clear Comment</button>
-                    <button class="navbutton" onClick="saveComment()">Save Comment </button>
+<div id="dtext">
+  <h4>Your comment</h4>
+  <input id="namebox" type="text" maxlength="32" size="20" placeholder="Name" />
+  <br />
+  <textarea id="txt1" class="textbox" rows="6" placeholder="Your comment"></textarea>
+</div>
                 </form>
                 <br>
                 
@@ -120,6 +126,11 @@
                         </div>
                 </div>
                 
+             
+               
+               <h4>Comments</h4>
+<div id="cmtlist"></div>
+                
             </section>
         </div>
         
@@ -129,7 +140,7 @@
             </footer>
         </div>
     </div>
-    <script src="comments.js">
+    <script src="scripts/comments.js">
     
     </script>
 </body>
