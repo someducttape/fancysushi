@@ -12,20 +12,7 @@
 <script src="scripts/anime.min.js"></script> <!-- henter anime.js -->
 <script src="https://kit.fontawesome.com/756ea4b8ac.js"></script> <!-- henter fontawesome -->
 
-<script>
-    
-    let health = 100;
-    let mana = 50;
-    
-    let enemyHealth = 80;
-    
-    function basicAttack(){
-        enemyHealth = enemyHealth - 5;
-        document.getElementById("enemy-health-p").innerHTML = enemyHealth + "/80 HP";
-    }
-    
-    
-</script>
+<script src="scripts/sushirpg.js"></script> <!-- rpg script -->
 
 <body>
     <div class="main-wrapper">
@@ -51,22 +38,25 @@
             <section>
                 <h2>Sushi RPG</h2>
                 <p>Du må sloss mot fisk for å kunne lage mer sushi!</p>
+                
                 <br>
     
                 <button onclick="basicAttack()">Basic attack</button>
-                <button>Special attack (5 mana)</button>
-                <button>Heal (5 mana)</button>
+                <button onclick="specialAttack()">Special attack (5 mana)</button>
+                <button onclick="healing()">Heal 30 HP (5 mana)</button>
                 <br>
                 <div class="rpg-fighter">
                     <p id="rpg-hp">100/100 HP</p>
                     <p id="rpg-mana">50/50 mana</p>
                     <img id="rpg-chef" src="images/banner/chef2.png">
+                    
                 </div>
                 
                 <div class="rpg-enemy">
                     <p id="enemy-health-p">80/80 HP</p>
-                    <p>Fish monster!</p>
-                    <div style="width: 140px; height: 300px; background-color: red; "></div>
+                    <p>Monster!</p>
+                    <img src="images/other/monster.png" alt="Fiske monster"> <!-- jeg er, som de kule kidsa sier, en kunster -->
+                    <p id="log-p"> </p>
                 </div>
                 
                 
