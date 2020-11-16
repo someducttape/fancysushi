@@ -5,22 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FancySushi</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Syne+Tactile&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Syne+Tactile&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
     <div class="main-wrapper">
-        <div class="header-box"> <!-- top header -->
+        <div class="header-box">
+            <!-- top header -->
             <header>
                 <h1>Fancy<br>Sushi</h1>
             </header>
         </div>
-        
-        
-        <div class="navbar-box"> <!-- navbar -->
-           <nav>
+
+
+        <div class="navbar-box">
+            <!-- navbar -->
+            <nav>
                 <ul>
                     <li class="active"><a href="forside.html">Hjem <i class="fas fa-home"></i></a></li>
                     <li><a href="kundeanmeldelser.html">Anmeldelser</a></li>
@@ -29,67 +31,68 @@
                 </ul>
             </nav>
         </div>
-        
+
         <div class="main-body">
             <main>
-               <div class="banner-div" id="bannerSmile"><!-- animert banner -->
-                   <h3 id="banner-txt">Den Beste Sushien Finner Du Her</h3>
-                   <img class="banner-img1" src="images/banner/chef1.png" alt="">
-               </div>
-                
+                <div class="banner-div" id="bannerSmile">
+                    <!-- animert banner -->
+                    <h3 id="banner-txt">Den Beste Sushien Finner Du Her</h3>
+                    <img class="banner-img1" src="images/banner/chef1.png" alt="sushi kokk">
+                </div>
+
                 <p>Se produktene våre her</p>
-                
+
                 <div class="products-div">
-                   <section>
-                       <h2>Fancy Fisk™</h2>
+                    <section>
+                        <h2>Fancy Fisk™</h2>
                         <img src="images/food/dry-fish.jpg" alt="Diverse tørr fisk med drikke">
-                        <p>Velg mellom diverse  tørrfisk og få med valgfri drikke på kjøpet!</p>
+                        <p>Velg mellom diverse tørrfisk og få med valgfri drikke på kjøpet!</p>
                         <p>259,-</p>
                     </section>
-                    
+
                     <section>
                         <h2>Nigiri</h2>
                         <img src="images/food/flyfish-sushi.jpg" alt="To biter nigiri">
                         <p>For en klassisk sushi opplevelse.</p>
                         <p>149,-</p>
                     </section>
-                       
-                       
+
+
                     <section>
                         <h2>Maki</h2>
                         <img src="images/food/salmon-maki.jpg" alt="Tre biter lakse maki">
                         <p>Sylindere med ris, fisk og grønnsaker.</p>
                         <p>149,-</p>
                     </section>
-                       
+
                     <section>
                         <h2>Fancy rogn</h2>
                         <img src="images/food/sushi-plate-big.JPG" alt="Mange sushi biter">
                         <p>Laks servert med agurk og rogn.</p>
                         <p>179,-</p>
                     </section>
-                                        
+
                     <section>
                         <h2>Sashimi</h2>
                         <img src="images/food/sushi-plate-small.jpg" alt="To sushi biter">
                         <p>Tynne skiver fisk.</p>
                         <p>129,-</p>
                     </section>
-                    
+
                     <section>
                         <h2>Tempura m/ reker</h2>
                         <img src="images/food/tempura-prawn.jpg" alt="Tempura på et fat">
                         <p>Friterte reker.</p>
                         <p>169,-</p>
                     </section>
-                    
+
                     <section>
                         <h2>Vegansk tempura</h2>
                         <img src="images/food/tempura-plate.jpg" alt="Vegansk tempura på et fat">
                         <p>Vårt veganske alternativ til tempura!</p>
                         <p>150,-</p>
                     </section>
-                       
+
                     <section>
                         <h2>Temaki</h2>
                         <img src="images/food/wrap.jpg" alt="Sushi wrap">
@@ -99,7 +102,7 @@
                 </div>
             </main>
         </div>
-        
+
         <div class="footer-box">
             <footer>
                 <p>Ring oss! +47 8839 483</p>
@@ -107,40 +110,38 @@
         </div>
     </div>
     <script src="scripts/anime.min.js"></script> <!-- henter anime.js -->
-<script src="https://kit.fontawesome.com/756ea4b8ac.js"></script> <!-- henter fontawesome -->
-<script src="scripts/banner.js"></script>
+    <script src="https://kit.fontawesome.com/756ea4b8ac.js"></script> <!-- henter fontawesome -->
+    <script src="scripts/banner.js"></script>
 
-<script>
-    
-   // anime({
-    //targets: '.banner-div',
-    //keyframes: [
-    //    {translateX: 250 , scale: 1},
-    //    {translateY: 50, scale: 1.5},
-    //    {translateX: -250, scale: 2},
-    //    {translateY: -50, scale: 2.5}
-    //],
-    //duration: 3000,
-    //loop: true
- 
-//});
-    
-    anime({
+    <script>
+        // anime({
+        //targets: '.banner-div',
+        //keyframes: [
+        //    {translateX: 250 , scale: 1},
+        //    {translateY: 50, scale: 1.5},
+        //    {translateX: -250, scale: 2},
+        //    {translateY: -50, scale: 2.5}
+        //],
+        //duration: 3000,
+        //loop: true
+
+        //});
+
+        anime({
             targets: "#banner-txt",
             translateY: -22,
             easing: "linear",
             opacity: 1,
             duration: 600
         });
-    
-    anime({
+
+        anime({
             targets: ".banner-img1",
             translateX: -40,
             easing: "linear",
             opacity: 1,
             duration: 600
         });
-</script>
+    </script>
 
-</body>
-</html>
+</body></html>

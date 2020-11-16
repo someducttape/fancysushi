@@ -9,7 +9,7 @@ function UUfacts() {
 // for å vise alle fakta i en liste
 function allFacts() {
     
-    if (window.confirm("Er du helt sikker på at du vil juske og se alle faktaene på en gang?")){
+    if (window.confirm("Er du helt sikker på at du vil jukse og se alle faktaene på en gang?")){
         var text;
 
     text = "<ol>";
@@ -20,7 +20,7 @@ function allFacts() {
 
     document.getElementById("p-output").innerHTML = text; 
     }else{
-        alert("Nei");
+        
     }
     
     /*
