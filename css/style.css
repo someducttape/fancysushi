@@ -61,14 +61,16 @@ li.active {
 
 /* animert banner */
 .banner-div{
-    width: 450px;
-    height: 70px;
+    width: 450hv;
+    height: 70hv;
     border: 1px solid black;
     overflow: hidden;
 }
 
 .banner-div img{
-    width: 50px;
+    width: 100px;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .products-div {
@@ -149,3 +151,39 @@ footer p {
 #rpg-chef{
     width: 150px;
 }
+
+.banner-div{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+
+#banner-txt{
+    margin-top: 20%;
+    opacity: 0;
+    font-size: 20px;
+    margin-left: 14%;
+}
+
+.banner-img1{
+            margin-top: 40%;
+            opacity: 1;
+}
+
+
+
+.banner-div {
+            border: solid 1px;
+            width: 30%;
+            height: 200px;
+            margin-left: 40%;
+        }
+
+        #h3Banner {
+            margin-left: 20px;
+        }
+
+        .bannerElements {
+            opacity: 0;
+        }

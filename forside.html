@@ -9,20 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<script src="scripts/anime.min.js"></script> <!-- henter anime.js -->
-<script src="https://kit.fontawesome.com/756ea4b8ac.js"></script> <!-- henter fontawesome -->
-<script src="scripts/banner.js"></script>
-
-<script>
-    
-    anime({
-    targets: '.banner-img1',
-    translateX: 100,
-    duration: 1000,
-    direction: 'alternate'
-});
-    
-</script>
 
 <body>
     <div class="main-wrapper">
@@ -46,9 +32,9 @@
         
         <div class="main-body">
             <main>
-               <div class="banner-div"><!-- animert banner -->
+               <div class="banner-div" id="bannerSmile"><!-- animert banner -->
+                   <h3 id="banner-txt">Den Beste Sushien Finner Du Her</h3>
                    <img class="banner-img1" src="images/banner/chef1.png" alt="">
-                   <img class="banner-img2" src="images/banner/chef2.png" alt="">
                </div>
                 
                 <p>Se produktene våre her</p>
@@ -120,6 +106,41 @@
             </footer>
         </div>
     </div>
+    <script src="scripts/anime.min.js"></script> <!-- henter anime.js -->
+<script src="https://kit.fontawesome.com/756ea4b8ac.js"></script> <!-- henter fontawesome -->
+<script src="scripts/banner.js"></script>
+
+<script>
     
+   // anime({
+    //targets: '.banner-div',
+    //keyframes: [
+    //    {translateX: 250 , scale: 1},
+    //    {translateY: 50, scale: 1.5},
+    //    {translateX: -250, scale: 2},
+    //    {translateY: -50, scale: 2.5}
+    //],
+    //duration: 3000,
+    //loop: true
+ 
+//});
+    
+    anime({
+            targets: "#banner-txt",
+            translateY: -22,
+            easing: "linear",
+            opacity: 1,
+            duration: 600
+        });
+    
+    anime({
+            targets: ".banner-img1",
+            translateX: -40,
+            easing: "linear",
+            opacity: 1,
+            duration: 600
+        });
+</script>
+
 </body>
 </html>

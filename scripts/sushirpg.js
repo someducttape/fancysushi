@@ -15,6 +15,25 @@
     function basicAttack(){
         const basicAttack = Math.floor(Math.random() * 5) + 2;
         
+        anime({
+          targets: "#rpg-chef",
+          translateX: 150,
+          easing: "linear",
+          duration: 50,
+          loop: 2,
+          direction: "alternate"
+        });
+        
+        anime({
+          targets: "#imgEnemy",
+          delay: 500,
+          translateX: -150,
+          easing: "linear",
+          duration: 50,
+          loop: 2,
+          direction: "alternate"
+        });
+        
         enemyHealth = enemyHealth - basicAttack;
         document.getElementById("enemy-health-p").innerHTML = enemyHealth + "/80 HP";
         
@@ -25,11 +44,22 @@
         
         defeatCheck();
     }
+
     
 // spesielt angrep som gjør mye skade og stunner
     function specialAttack(){
         if(mana > 0){
             const specialAttack = Math.floor(Math.random() * 10) + 5;
+            
+            anime({
+          targets: "#rpg-chef",
+          translateX: 150,
+          easing: "linear",
+          duration: 50,
+          loop: 2,
+          rotate: 360,
+          direction: "alternate"
+        });
         
             enemyHealth = enemyHealth - specialAttack;
             document.getElementById("enemy-health-p").innerHTML = enemyHealth + "/80 HP";
@@ -43,11 +73,20 @@
         }else{
             alert("Ikke nok mana! Prøv noe annet!");
         }
+        }
     }
     
 // healing spell
     function healing(){
         if(mana > 0 && health < 70){
+            anime({
+          targets: "#rpg-chef",
+          translateY: -50,
+          easing: "linear",
+          duration: 50,
+          loop: 2,
+          direction: "alternate"
+        });
             const healing = 30;
             
             mana = mana - 5;
