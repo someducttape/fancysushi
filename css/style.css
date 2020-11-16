@@ -214,3 +214,79 @@ footer p {
 #UU-fakta-output{
     padding: 5px;
 }
+
+#logComment{
+    text-align: center;
+}
+
+.comments{
+    background: rgba(0,0,0,0.7);
+    margin-bottom: 10px; 
+}
+
+.comment-template{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.comment-info{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.comment-text{
+    display: grid;
+    width: 100px;
+}
+
+.comment-profile{
+    display: grid;
+    text-align: center
+}
+
+.comment-star{
+    margin: 5px;
+    margin-top: 15px;
+    display: grid;
+    grid-gap: 25px;
+    width: 70px;
+}
+
+.comment-img{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+form{
+    text-align: center;
+}
+
+#cmtlist{
+    display: grid;
+    grid-gap: 10px;
+
+}
+#cmtlist p{
+    width: 100%;
+    border: solid;
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "."
+    "."
+    ".";
+    grid-gap: 25px;
+}
+#cmtlist span{
+   
+    
+}
+
+#cmtlist .commentName{
+    border: solid;
+    border-color: red
+}

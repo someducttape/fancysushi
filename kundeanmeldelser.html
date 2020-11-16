@@ -40,93 +40,27 @@
         </div>
         
         <div class="main-body">
-            <section>
+            <section id="logComment">
                 <p>Skriv en anmeldelse her, eller les andre sine!</p><br>
                 
                 <h2>Skriv anmeldelse</h2>
                 <form>
-                       <button class="navbutton" onClick="clearComment()">Clear Comment</button>
-<button class="navbutton" onClick="saveComment()">Save Comment </button>
+            
+                    <br>
 
-                    <input name="form-title" id="review-title" type="text" placeholder="Overskrift"><br>
-<div id="dtext">
+                   <br>
+                    <div id="dtext">
   <h4>Your comment</h4>
   <input id="namebox" type="text" maxlength="32" size="20" placeholder="Name" />
   <br />
-  <textarea id="txt1" class="textbox" rows="6" placeholder="Your comment"></textarea>
+  <textarea id="txt1" class="textbox" rows="6" placeholder="Your comment"></textarea> <br>
+  <button class="navbutton" onClick="saveComment()">Save Comment </button>
 </div>
                 </form>
                 <br>
                 
                 <h2>Anmeldelser</h2>
-                <div class="review-output" id="review-output">
-                        <div class="one">
-                            <img class="review-img-size" src="" alt="" srcset="images/food/dry-fish.jpg">
-                        </div>
-                        <div class="two">
-                            <h3>Mikal T.</h3>
-                            <p>Snak Hashaugen, Osla, Norway</p>
-                            <p><i class="fas fa-user-friends"></i><span class="frinds-count">0</span>frinds</p>
-                            <p> <span class="frind-star" ><i class="fa fa-star" aria-hidden="true"></i></span><span class="frinds-count">0</span>frinds</p>
-                            <p> <i class="fas fa-camera"></i><span class="frinds-count">0</span>frinds</p>
-                           
-                        </div>
-                        <div class="three">
-                            <div class="frind-ratting">
-                            <div class="rate">
-                                <input type="radio" id="star5" name="rate" value="5" />
-                                <label for="star5" title="text"></label>
-                                <input type="radio" id="star4" name="rate" value="4" />
-                                <label for="star4" title="text"></label>
-                                <input type="radio" id="star3" name="rate" value="3" />
-                                <label for="star3" title="text"></label>
-                                <input type="radio" id="star2" name="rate" value="2" />
-                                <label for="star2" title="text"></label>
-                                <input type="radio" id="star1" name="rate" value="1" />
-                                <label  for="star1" title="text"></label>
-                              </div>
-                            <span class="date">9/14/2020</span> 
-                             </div>
-                             <p class="frinds-color-text">
-                                All my friends’ pictures of giant sandwiches, colorful soups and chocolate chip cookies are seriously making me hungry.I should’ve known! Food is one of the biggest topics of conversation online and offline.If you want to participate in these conversations in English, you’ll need 
-                             </p>
-                        </div>
-                </div>
-                <div class="review-output" id="review-output">
-                        <div class="one">
-                            <img class="review-img-size" src="" alt="" srcset="images/food/tempura-plate.jpg">
-                        </div>
-                        <div class="two">
-                            <h3>Mikal T.</h3>
-                            <p>Snak Hashaugen, Osla, Norway</p>
-                            <p><i class="fas fa-user-friends"></i><span class="frinds-count">0</span>frinds</p>
-                            <p> <span class="frind-star" ><i class="fa fa-star" aria-hidden="true"></i></span><span class="frinds-count">0</span>frinds</p>
-                            <p> <i class="fas fa-camera"></i><span class="frinds-count">0</span>frinds</p>
-                           
-                        </div>
-                        <div class="three">
-                            <div class="frind-ratting">
-                            <div class="rate">
-                                <input type="radio" id="star5" name="rate" value="5" />
-                                <label for="star5" title="text"></label>
-                                <input type="radio" id="star4" name="rate" value="4" />
-                                <label for="star4" title="text"></label>
-                                <input type="radio" id="star3" name="rate" value="3" />
-                                <label for="star3" title="text"></label>
-                                <input type="radio" id="star2" name="rate" value="2" />
-                                <label for="star2" title="text"></label>
-                                <input type="radio" id="star1" name="rate" value="1" />
-                                <label  for="star1" title="text"></label>
-                              </div>
-                            <span class="date">9/14/2020</span> 
-                             </div>
-                             <p class="frinds-color-text">
-                                All my friends’ pictures of giant sandwiches, colorful soups and chocolate chip cookies are seriously making me hungry.I should’ve known! Food is one of the biggest topics of conversation online and offline.If you want to participate in these conversations in English, you’ll need 
-                             </p>
-                        </div>
-                </div>
-                
-             
+
                
                <h4>Comments</h4>
 <div id="cmtlist"></div>
