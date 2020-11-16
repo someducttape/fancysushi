@@ -3,9 +3,14 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    width: 100%;
+}
+
 .main-wrapper {
     display: grid;
-    grid-template-rows: auto auto 75vh 5.75vh;
+    grid-template-rows: auto auto auto auto;
+    background: white;
 }
 
 
@@ -16,6 +21,7 @@ header {
     background-position: 100% 20%;
     height: 15vh;
     grid-area: header;
+    background-color: deeppink;
 }
 
 h1 {
@@ -60,14 +66,14 @@ li.active {
 /* kun på hjemmesiden */
 
 /* animert banner */
-.banner-div{
+.banner-div {
     width: 450hv;
     height: 70hv;
     border: 1px solid black;
     overflow: hidden;
 }
 
-.banner-div img{
+.banner-div img {
     width: 100px;
     max-width: 100%;
     min-width: 100%;
@@ -90,10 +96,11 @@ li.active {
 
 /* footer */
 .footer-box {
-    background-color: #650e36;
-    color: #f3dff4;
+    color: #650e36;
+    font-weight: bold;
     text-align: center;
     overflow: hidden;
+    border-top: 2px solid #650e36;
 }
 
 footer p {
@@ -124,66 +131,88 @@ footer p {
     .products-div {
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 0px;
-        overflow: visible;
+        overflow: auto;
     }
 
-    
-    .products-div section img{
+
+    .products-div section img {
         width: 20vw;
         max-width: 20em;
     }
 
-    h1{
+    h1 {
         font-size: 6em;
     }
 
 }
 
 /* EGENDEFINERT - rpg */
-.rpg-fighter{
+.rpg-fighter {
     float: left;
 }
 
-.rpg-enemy{
+.rpg-enemy {
     float: right;
 }
 
-#rpg-chef{
+#rpg-chef {
     width: 150px;
 }
 
-.banner-div{
+.banner-div {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr;
     grid-gap: 15px;
 }
 
-#banner-txt{
+#banner-txt {
     margin-top: 20%;
     opacity: 0;
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-left: 14%;
 }
 
-.banner-img1{
-            margin-top: 40%;
-            opacity: 1;
+.banner-img1 {
+    margin-top: 40%;
+    opacity: 1;
 }
 
-
-
 .banner-div {
-            border: solid 1px;
-            width: 30%;
-            height: 200px;
-            margin-left: 40%;
-        }
+    border: solid 1px;
+    width: 40%;
+    height: 150px;
+    margin-left: 30%;
+}
 
-        #h3Banner {
-            margin-left: 20px;
-        }
+#h3Banner {
+    margin-left: 20px;
+}
 
-        .bannerElements {
-            opacity: 0;
-        }
+.bannerElements {
+    opacity: 0;
+}
+
+/* universal utforming */
+.UU-section{
+    padding: 1em 0;
+}
+
+.UU-section button{
+    background: linear-gradient(45deg, #e88a8a, #9a9afc, #b1f0c7);
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px rgba(30, 29, 39, 0.72);
+    margin: 10px;
+}
+
+.UU-section button:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(13, 13, 18, 0.85);
+}
+
+#UU-fakta-output{
+    padding: 5px;
+}
