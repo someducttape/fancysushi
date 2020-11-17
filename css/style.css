@@ -113,6 +113,8 @@ footer p {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 5px;
     }
+    
+    
 }
 
 @media only screen and (min-width: 1025px) {
@@ -165,7 +167,7 @@ footer p {
 }
 
 #banner-txt {
-    margin-top: 20%;
+    margin-top: 40px;
     opacity: 0;
     font-size: 1.5rem;
     margin-left: 14%;
@@ -289,4 +291,10 @@ form{
 #cmtlist .commentName{
     border: solid;
     border-color: red
+}
+
+@media  (max-width: 660px){
+    #banner-txt{
+        font-size: 4vw;
+    }
 }
